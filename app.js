@@ -81,16 +81,14 @@ resetbtn.addEventListener("click", resetGame);
 
 
 
-
-
 // disableboxes
 // enableboxes
 // forEach
-// addElement
+// addEventListener
 // disabled
 // ClassList
 // Remove
 // Hide
 // pattern
-
+// Arrow Fucntion
 
