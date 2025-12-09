@@ -1,12 +1,14 @@
 import { useState } from 'react'
-import Home from './Component/Containers/Container_1/index'
+// import GameFuc from './Component/Containers/Game/GameFuc'
+import Index from './Component/Containers/Container_1'
 
 function App() {
   
   return (
     <>
 
-      <Home />
+      {/* <GameFuc /> */}
+      <Index />
 
     </>
   )
