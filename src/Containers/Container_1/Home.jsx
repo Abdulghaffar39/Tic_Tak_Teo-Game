@@ -2,6 +2,14 @@ import React from 'react'
 import "./style.css"
 import logo from "./images/logo.svg"
 
+
+    // function Cross() {
+
+    //     let Cross = document.getElementById("Cross");
+
+    //     Cross.style.backgroundColor = "#a9bec8"
+
+    // }
 export default function Home() {
 
     return (
@@ -24,8 +32,8 @@ export default function Home() {
                 </div>
 
                 <div className='chlid_2'>
-                    
-                    <div className="grand_child_1">X</div>
+
+                    <div className="grand_child_1" id='Cross'>X</div>
                     <div className="grand_child_2">O</div>
 
                 </div>
