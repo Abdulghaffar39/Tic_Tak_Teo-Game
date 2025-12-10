@@ -1,16 +1,49 @@
-import React from 'react'
+import * as React from 'react';
+import { Link } from 'react-router-dom';
+
 import "./style.css"
 import logo from "./images/logo.svg"
+import Tise from "../Container_2/Tise"
 
-
-    // function Cross() {
-
-    //     let Cross = document.getElementById("Cross");
-
-    //     Cross.style.backgroundColor = "#a9bec8"
-
-    // }
 export default function Home() {
+
+    const cross = () => {
+
+        let x = document.getElementById("x");
+        let o = document.getElementById("o");
+
+        x.style.backgroundColor = "#a9bec8";
+        o.style.backgroundColor = "#1a2b33";
+        x.style.color = "#1f3641";
+        o.style.color = "#a9bec8";
+
+        console.log(x.innerHTML);
+
+    }
+
+    const zero = () => {
+
+        let o = document.getElementById("o");
+        let x = document.getElementById("x");
+
+        o.style.backgroundColor = "#a9bec8";
+        x.style.backgroundColor = "#1a2b33";
+        o.style.color = "#1f3641";
+        x.style.color = "#a9bec8";
+
+        console.log(o.innerHTML);
+
+
+    }
+
+    const startBtn = () => {
+
+        let start = document.getElementById("start");
+
+        start.classList.toggle("moved");
+        window.location.href = { Tise };
+
+    }
 
     return (
 
@@ -33,8 +66,8 @@ export default function Home() {
 
                 <div className='chlid_2'>
 
-                    <div className="grand_child_1" id='Cross'>X</div>
-                    <div className="grand_child_2">O</div>
+                    <div className="grand_child_1" id='x' onClick={cross}>X</div>
+                    <div className="grand_child_2" id='o' onClick={zero}>O</div>
 
                 </div>
 
@@ -46,9 +79,9 @@ export default function Home() {
 
             </div>
 
-            <div className="parent_3">
+            <div className="parent_3" id='start' onClick={startBtn}>
 
-                <button>START GAME</button>
+                <button role='button'><Link to="/Tise">START GAME</Link></button>
 
             </div>
 
